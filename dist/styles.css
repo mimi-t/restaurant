@@ -1,0 +1,119 @@
+/*
+bright red: 247, 44, 37
+*/
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    background: url("/images/chevron.png");
+    color: #191716;
+}
+
+b {
+    font-weight: 700;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 10%;
+    background-color: rgb(196, 0, 0, 0.9);
+    box-sizing: border-box;
+    z-index: 999;
+}
+
+#logo-wrapper {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+#nav-list {
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+#img-wrapper {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    overflow: hidden;
+    height: 90vh;
+    box-sizing: border-box;
+}
+
+#cooks-img {
+    width: 100%;
+    box-sizing: border-box;
+} 
+
+#about {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 5%;
+    margin: 70px 10%;
+}
+
+#about-text {
+    display: block;
+    grid-column: 1 / 2;
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 70px;  
+    color: rgb(196, 0, 0); 
+    border-bottom: 3px solid rgb(196, 0, 0);
+}
+
+#about-text > p {
+    margin: 40px 0px;
+    line-height: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    color: #fff;
+    background: rgb(196, 0, 0);
+    border: none;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 40px;
+}
+
+#about-img {
+    display: grid;
+    grid-column: 2 / 3;
+}
+
+#about-img > img {
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 20px 20px 0px rgb(196, 0, 0);
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    padding: 30px 10%;
+    background: rgb(196, 0, 0);
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+}

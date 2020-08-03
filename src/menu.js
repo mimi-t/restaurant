@@ -62,7 +62,7 @@ const addMenu = () => {
      </div>
     */
     const menuWrapper_div = document.createElement('div');
-    menuWrapper_div.id = 'menu-wrapper';
+    menuWrapper_div.id = 'main-wrapper';
 
     menuArray.forEach(category => {
         let menuCategory_section = document.createElement('section');

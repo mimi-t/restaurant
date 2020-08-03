@@ -46,38 +46,38 @@ const addFooter = () => {
     /*
     <footer>
         <div>
-            <p><b>Ramen House</b></p>
+            <p><b>Location</b></p>
+            <p>Ramen House</p>
             <p>15 Linders Street, Melbourne VIC 3000</p>
-            <p>03 1234 5678</p>
         </div>
         <div>
-            <p><b>Opening Hours</b></p>
-            <p>Mon - Fri: 9:00am to 10:00pm</p>
-            <p>Sat - Sun: 10:00am to 9:00pm</p>
+            <p><b>Hours</b></p>
+            <p>Mon - Fri:    9:00am to 10:00pm</p>
+            <p>Sat - Sun:   10:00am to 9:00pm</p>
+        </div>
+        <div>
+            <p><b>Contact</b></p>
+            <p>+61 2 3456 7890</p>
+            <p>info@ramenhouse.com</p>
         </div>
     </footer>
     */
     const footer = document.createElement('footer');
     
-    const resturantDetails_div = document.createElement('div');
-    const detailsTextArray = ['<b>Ramen House</b>', '15 Linders Street, Melbourne VIC 3000', '03 1234 5678'];
-    detailsTextArray.forEach(text => {
-        const element = document.createElement('p');
-        element.innerHTML = text;
-        resturantDetails_div.appendChild(element);
-    });
-    footer.appendChild(resturantDetails_div);
+    const footerArray = [['<b>Location</b>','Ramen House', '15 Linders Street, Melbourne VIC 3000'], ['<b>Opening Hours</b>', 'Mon - Fri: 9:00am to 10:00pm', 
+    'Sat - Sun: 10:00am to 9:00pm'], ['<b>Contact</b>', '+61 2 3456 7890', 'info@ramenhouse.com']];
 
-    const openHours_div = document.createElement('div');
-    const hoursTextArray = ['<b>Opening Hours</b>', 'Mon - Fri: 9:00am to 10:00pm', 'Sat - Sun: 10:00am to 9:00pm'];
-    hoursTextArray.forEach(text => {
-        const element = document.createElement('p');
-        element.innerHTML = text;
-        openHours_div.appendChild(element);
+    footerArray.forEach(section => {
+        let details_div = document.createElement('div');
+        section.forEach(text => {
+            let line = document.createElement('p');
+            line.innerHTML = text;
+            details_div.appendChild(line);    
+        })
+        footer.appendChild(details_div)
     });
-    footer.appendChild(openHours_div);
-
     content_div.appendChild(footer);
+    return false;
 }
 
 export {addNav, addFooter};

@@ -4,12 +4,12 @@ const addHome = () => {
     const content_div = document.querySelector('#content');
     addNav();
     /*
-    <div id="img-wrapper">
+    <div id="center-img-wrapper">
         <img id="cooks-img" src="/images/cooks.jpg">
     </div>
     */
     const imgWrapper_div = document.createElement('div');
-    imgWrapper_div.id = 'img-wrapper';
+    imgWrapper_div.id = 'center-img-wrapper';
     const cooksImg_img = document.createElement('img');
     cooksImg_img.id = 'cooks-img';
     cooksImg_img.src = '/images/cooks.jpg';
@@ -43,7 +43,7 @@ const addHome = () => {
     aboutBody_p.innerHTML = 'Ramen House is a restaurant that specialises in authentic Japanese ramen. Located in the heart of Melbourne, we have been serving ' +
                             'locals hot bowls of flavourful ramen since 2010. Drop by our store on 15 Linders Street for a taste of our unique broth and ' +
                             'handmade noodles.';
-    lookMenu_button.innerHTML = 'Look at Menu'
+    lookMenu_button.innerHTML = 'View Menu'
     aboutText_div.append(aboutHeading_h1, aboutBody_p, lookMenu_button);
     about_section.appendChild(aboutText_div);
 

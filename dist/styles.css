@@ -1,5 +1,5 @@
 /*
-bright red: 247, 44, 37
+https://pastebin.com/7529PZiG
 */
 
 body {
@@ -116,4 +116,59 @@ footer {
     color: #fff;
     font-size: 20px;
     line-height: 30px;
+}
+
+.center-heading {
+    display: grid;
+    place-items: center;
+    margin-top: 110px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 50px;
+    padding-bottom: 90px;
+    background: #fff;
+}
+
+.center-heading > h1 {
+    font-size: 90px;
+}
+
+#menu-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 180px;
+    background: #fff;
+    box-sizing: border-box
+}
+
+.menu-category > h2 {
+    margin-bottom: 30px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 60px;
+}
+
+.menu-item {
+    box-sizing: border-box;
+    margin: 30px 0px;
+}
+
+.header-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.header-item > h3 {
+    font-weight: 700;
+}
+
+.menu-item > p {
+    line-height: 24px;
+    font-size: 20px;
 }

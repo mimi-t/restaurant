@@ -26,12 +26,12 @@ const addNav = () => {
 
     const navList_div = document.createElement('div');
     navList_div.id = 'nav-list';
-    const navLinksArray = [{name: 'Home', link: 'index.html'}, {name: 'Menu', link: 'menu.html'}, {name: 'Contact', link: 'contact.html'}];
-    navLinksArray.forEach(navObj => {
+    const navLinksArray = ['Home', 'Menu', 'Contact'];
+    navLinksArray.forEach(nav => {
         let navElement = document.createElement('a');
         navElement.classList.add('nav-link');
-        navElement.href = navObj.link;
-        navElement.innerHTML = navObj.name;
+        navElement.href = '#';
+        navElement.innerHTML = nav;
         navList_div.appendChild(navElement);
     })
     navbar_nav.appendChild(navList_div);
